@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
-</head>
-  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
     <a-scene
       mindar-image="imageTargetSrc: ./assets/targets.mind;"
       color-space="sRGB"
@@ -13,8 +13,7 @@
       vr-mode-ui="enabled: false"
       device-orientation-permission-ui="enabled: false"
     >
-      <a-assets>
-      </a-assets>
+      <a-assets></a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
@@ -25,7 +24,6 @@
           height="0.5"
           depth="0.5"
           color="#7c6ff7"
-          rotation="0 0 0"
         ></a-box>
         <a-text
           value="Next Wave AR"
